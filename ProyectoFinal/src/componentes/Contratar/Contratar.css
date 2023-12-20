@@ -1,0 +1,99 @@
+
+
+.name {
+    height: 30px;
+}
+.email {
+    height: 30px;;
+}
+.message {
+ 
+    height: 100px;
+}
+.boton {
+    margin-top: 20px;
+    height: 20px;
+    width: 280px;
+    height: 40px;
+    border-radius: 30px;
+
+}
+
+.boton:hover {
+    cursor: pointer;
+   
+    
+}
+
+.PlanesTitulo {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.planes {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    
+    
+}
+
+.planPlata {
+    width: 300px;
+    height: 400px;
+    background-color:silver;
+    border-radius: 30px;
+    margin-right: 20px;
+ }
+
+ .planOro {
+    width: 300px;
+    height: 425px;
+    background-color: goldenrod;
+    border-radius: 30px;
+    margin-right: 20px;
+
+ }
+
+ .planDiamante {
+    width: 350px;
+    height: 450px;
+    background-color:rgb(113, 209, 204);
+    border-radius: 30px;
+    
+ }
+
+.TituloPlan {
+    text-align: center;
+    margin-top: 20px;
+}
+.DescripcionPlan {
+    text-align:justify;
+    margin-right: 10px;
+    margin-left: 10px;
+   
+}
+.PrecioPlan {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+ 
+}
+
+
+.Contratar {
+    margin-top: 200px;
+    text-align: center;
+}
+
+form {
+    
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+    
+}

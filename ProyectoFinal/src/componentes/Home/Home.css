@@ -1,0 +1,128 @@
+
+
+/* Titulo Web */
+
+
+.TituloWeb{
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 10px;
+    padding: 3px;
+    font-size: 100px;
+    background:-webkit-linear-gradient(  cyan 30%, black); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-family: 'Dosis', sans-serif; */
+
+}
+
+.VistaInicial {
+
+    height: 100vh;
+}
+
+
+.section {
+
+    justify-content: center;
+    flex-wrap: wrap;
+      color: radial-gradient(cyan, black)
+    
+    }
+    .section ul {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+       margin: 20px;
+    
+    
+    }
+
+    .TituloPeliculas {
+        text-align: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        color: white;
+        font-size: 60px;
+        font-family: 'Dosis', sans-serif;
+
+    }
+
+   
+    
+    .container img {
+        border-radius: 50px;
+        
+    }
+    .container img:hover {
+        cursor: pointer;
+      
+    }
+    .section ul {
+        list-style: none;
+    }
+    
+    .section h1 {
+        text-align: center;
+    }
+    
+    .section button {
+        background-color:transparent;
+        border-color: transparent;
+    }
+    
+    .section button:hover {
+        background-color: lightblue;
+        border-color: none;
+        border-radius: 100px;
+       
+    }
+
+.ViewInfo{
+    background-size: cover;
+    min-height: 800px;
+    margin-bottom: 100px;
+}
+    
+.text-center {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Busqueda */
+
+.ContainerBusqueda{
+    display: flex;
+    margin-bottom: 200px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.InputBusqueda {
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+ 
+}
+
+.btn {
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 40px;
+    width: 100px;
+    
+}
+
+
+
+::placeholder {
+    padding-left: 20px;
+    color: cyan;
+    font-size: 20px;
+    opacity:  20%;
+    
+ 
+}
+
