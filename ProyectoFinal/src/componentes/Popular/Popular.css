@@ -3,6 +3,8 @@
     margin-top: 100px;
     margin-bottom: 150px;
     font-size: 60px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
     
 }
 
@@ -21,4 +23,11 @@ li {
 
 .Footer {
     
+}
+
+.nombrePopular {
+    
+        color: white;
+        font-family: 'Dosis', sans-serif;
+   
 }

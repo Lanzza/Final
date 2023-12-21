@@ -67,7 +67,7 @@ const Contact = () =>{
                 <input className='email' type="email" name="user_email" />
                 
                 <label  className='nombre'>Plan</label>
-                <input type="select" />
+                <input  className='plan' type="select" />
               
                 
                 

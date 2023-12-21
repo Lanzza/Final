@@ -26,10 +26,12 @@
 }
 
 .PlanesTitulo {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 150px;
     text-align: center;
     font-size: 60px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
 }
 
 .planes {
@@ -47,6 +49,7 @@
     background-color:silver;
     border-radius: 30px;
     margin-right: 20px;
+   
  }
 
  .planOro {
@@ -69,17 +72,22 @@
 .TituloPlan {
     text-align: center;
     margin-top: 20px;
+    background-color: transparent;
+
+
 }
 .DescripcionPlan {
     text-align:justify;
     margin-right: 10px;
     margin-left: 10px;
+    background-color: transparent;
    
 }
 .PrecioPlan {
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
+    background-color: transparent;
  
 }
 
@@ -95,5 +103,48 @@ form {
     display: grid;
     justify-content: center;
     padding: 30px;
+    
+}
+
+
+/* Formulario */
+
+.Contratar {
+    
+        color: white;
+        font-family: 'Dosis', sans-serif;
+    
+}
+.nombre, .emailName, .messageName, .boton{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    padding: 5px;
+}
+
+.boton {
+    margin-top: 60px;
+    border-color: white;
+    
+    
+}
+.boton:hover {
+    background-color: cyan;
+    color:black;
+}
+
+.input {
+
+    color: white;
+}
+
+.name, .email, .plan, .message{
+    color: white;
+    border-radius: 10px;
+}
+
+.seEnvio {
+    margin-top: 30px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
     
 }

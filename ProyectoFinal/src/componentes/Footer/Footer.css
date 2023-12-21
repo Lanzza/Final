@@ -1,7 +1,21 @@
+
+.CajaFooter {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 40px;
+margin-bottom: 30px;
+}
+
+
+
 .Footer {
     width: 100%;
     height: 250px;
     background-color: black;
+    margin-top: 10px;
+    margin-bottom: -200px;
+
   
 }
 
@@ -14,3 +28,80 @@
     margin-top: 300px;
    
 }
+
+.TituloFooter {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.Foto{
+    height: 200px;
+    border-radius: 20px;
+    margin-left: -200px;
+   
+  
+}
+
+
+.MiNombre {
+
+ color: white;
+ font-family: 'Dosis', sans-serif;
+ margin-left: -225px;
+ margin-top: 10px;
+
+}
+
+.Estudiante {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+   
+}
+
+.li {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+   
+}
+
+.li2 {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    margin-top: -90px;
+
+}
+
+.Tecnologias {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+   margin-left: 400px;
+   margin-top: -120px;
+}
+
+.CajaLogos {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 30px;
+    
+}
+
+.logos img {
+
+    width: 40px;
+    margin-left: 20px ;
+}
+
+
+.logos2 img{
+
+    width: 80px;
+    margin-left: 10px ;
+    margin-top: -2px;
+}
+

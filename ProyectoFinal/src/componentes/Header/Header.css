@@ -43,3 +43,32 @@ nav {
     font-family: 'Dosis', sans-serif;
    
 }   
+
+.link:hover {
+    color: cyan;
+}
+
+.series{
+    background-color: rgb(176, 57, 136);
+}
+
+.linkSeries {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    /* background: radial-gradient(rgb(176, 57, 136) , black 90%);  */
+    border-radius: 20px;
+    padding: 10px;
+    background:-webkit-linear-gradient(  rgb(176, 57, 136) 30%, black); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linkSeries:hover {
+   
+    background:-webkit-linear-gradient(  rgb(176, 57, 136) 100%, black); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

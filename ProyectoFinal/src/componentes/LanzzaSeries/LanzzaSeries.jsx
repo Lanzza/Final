@@ -1,11 +1,10 @@
-
 //Importamos lo que vamos a utilizar
 
 import React from "react";
 import axios from 'axios'
-import './Home.css'
+import './LanzzaSeries.css'
 import { useState, useEffect } from 'react'
-
+import Footer from "../Footer/Footer";
 
 
 //import Cambio from "../Cambio de Seccion/Cambio";
@@ -26,35 +25,24 @@ function Home() {
 
   const [movies, setMovies] = useState([])
   const [searchKey, setSearchKey] = useState("")
-  const [searchKey2, setSearchKey2] = useState("")
   const [movie, setMovie] = useState({title: "Loading Movies"});
-  const [movie2, setMovie2] = useState({title: "Loading Movies"});
-  
   const fetchMovies = async(searchKey) => {
     const type = searchKey ? "search" : "discover"
     const {data: { results },
-  } = await axios.get(`${API_URL}/${type}/movie`, {
+  } = await axios.get(`${API_URL}/${type}/tv`, {
     params: {
       api_key: API_KEY,
       query: searchKey,
       page:  1  // podemos cambiare el numero de pagina que renderizamos
-      
     },
   });
 
-
-
   setMovies(results)
   setMovie(results[0])
-  setMovie2(results[0])
-  console.log(results);
 
   if(results.lenght) {
     await fetchMovie (results[0].id)
   }
-
-  
- 
 
 
   }
@@ -65,11 +53,6 @@ function Home() {
     setMovie(movie)
     window.scroll(0,1300)           //scroll hasta la ubicacion de la ventana con la pelicula y descripcion
   }
-
-
-
-
-
 //Funcion para la peticion de una sola pelicula
 
   const fetchMovie = async(id)=>{
@@ -83,8 +66,6 @@ function Home() {
     setMovie(data)
   }
 
- 
-
 
   //Buscar
   const searchMovies= (e) => {
@@ -92,8 +73,8 @@ function Home() {
   fetchMovies(searchKey)
   window.scroll(0,1300)  
 
-}
 
+}
   useEffect(()=> {
     fetchMovies();
   }, [])
@@ -106,12 +87,12 @@ function Home() {
         
 
           <div className="VistaInicial">
-          <h1 className="TituloWeb">Lanzza Movies</h1>
+          <h1 className="TituloWebSeries">Lanzza Series</h1>
 
            {/* Buscador */}
 
            <form className="ContainerBusqueda" onSubmit={searchMovies} >
-            <input className="InputBusqueda" type="text" placeholder="Nombre de la Pelicula" onChange={(e)=> setSearchKey(e.target.value)}/> 
+            <input className="InputBusquedaSerie" type="text" placeholder="Nombre de la Serie"   onChange={(e)=> setSearchKey(e.target.value)}/> 
             <button className="btn btn-primary">Buscar</button>
            </form>
 
@@ -132,10 +113,7 @@ function Home() {
                   <div className="CajaView">
                     <h1 className="text-white">{movie.title}</h1>
                     <p className="text-white">{movie.overview}</p>
-                  
-                   
-                    
-                    {/* <p> {movie.caracter}</p> */}
+                    <p> {movie.caracter}</p>
                   </div>
                 </div>
             
@@ -150,7 +128,7 @@ function Home() {
 
               <section>
 
-                <h1 className="TituloPeliculas">Peliculas</h1>
+                <h1 className="TituloSeries">Series</h1>
               <div className="container ">
 
                 <div className="row">
@@ -160,12 +138,9 @@ function Home() {
                    <h2 className="text-center">{movie.title}</h2>
                   </div>
             ))}
+              </div>
 
               </div>
-                      <h1></h1>
-                      
-              </div>
-              
               </section>
 
       </div>
@@ -180,7 +155,6 @@ function Home() {
     
   )
 }
-
 
 
 export default Home

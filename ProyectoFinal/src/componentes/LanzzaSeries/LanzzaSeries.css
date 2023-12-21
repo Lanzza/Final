@@ -3,13 +3,13 @@
 /* Titulo Web */
 
 
-.TituloWeb{
+.TituloWebSeries{
     text-align: center;
     margin-top: 250px;
     margin-bottom: 10px;
     padding: 3px;
     font-size: 100px;
-    background:-webkit-linear-gradient(  cyan 30%, black); 
+    background:-webkit-linear-gradient(  rgb(176, 57, 136) 10%, black); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* font-family: 'Dosis', sans-serif; */
@@ -46,6 +46,11 @@
     }
 
     .TituloPeliculas {
+      
+
+    }
+
+    .TituloSeries {
         text-align: center;
         margin-top: 200px;
         margin-bottom: 200px;
@@ -54,7 +59,6 @@
         font-family: 'Dosis', sans-serif;
 
     }
-
     
     
     .container img {
@@ -141,21 +145,28 @@
 
 
 
-::placeholder {
-   
-    color: cyan;
-    font-size: 20px;
-    opacity:  20%;
-    
- 
+
+
+.InputBusquedaSerie {
+
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+    color:white;
 }
 
+.InputBusquedaSerie::placeholder {
 
+    color: rgb(176, 57, 136);
+    font-size: 20px;
+    opacity:  50%;
+}
 
-.Favoritos {
-    color: black;
-    background-color: gold;
-    padding: 5PX;
-    border-radius: 25PX;
-    margin-bottom: 30px;
+.Estudiante ul li {
+    
+    color: white;
+    font-family: 'Dosis', sans-serif;
+
 }

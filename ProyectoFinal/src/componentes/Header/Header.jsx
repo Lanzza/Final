@@ -9,6 +9,7 @@ import Upcoming from "../Upcoming/Upcoming";
 import Logo from "../assets/logo.png"
 import Logo2 from "../assets/Logo 2.png"
 import Logo3 from "../assets/Logo3.png"
+import LanzzaSeries from "../LanzzaSeries/LanzzaSeries";
 
 const Header = () =>{
 //React router (Biblotecas para el enrutamiento)
@@ -30,7 +31,9 @@ const Header = () =>{
                     <NavLink to='upcoming' className='link'>PROXIMAMENTE</NavLink>
                    {/* <NavLink to='about'  className='link'>ABOUT</NavLink>    si le agregamos target = "_blank" podemos hacer que se habra en otra pestaña la pagina en el navegador */}
                    <NavLink to='contratar'  className='link'>SUSCRIBIRSE</NavLink> {/*si le agregamos target = "_blank" podemos hacer que se habra en otra pestaña la pagina en el navegador*/}
-                   
+                   <NavLink to='series' className='linkSeries'>SERIES</NavLink>
+                  
+
                     
                 </nav>
              </header>
@@ -42,7 +45,7 @@ const Header = () =>{
                 <Route path='popular' element={<Popular/>} />
                 <Route path='upcoming' element={<Upcoming/>} />
                 <Route path='contratar' element={<Contratar/>} />
-                
+                <Route path='series' element={<LanzzaSeries/>}/>
             </Routes>
             
             </BrowserRouter>
