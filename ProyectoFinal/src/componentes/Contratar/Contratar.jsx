@@ -52,6 +52,8 @@ const Contact = () =>{
             </div>
         </div>
         <section>
+
+            
        
         <h2 className='Contratar'>CONTRATAR</h2>
       
